@@ -1,0 +1,239 @@
+.upload-container {
+  padding: 40px;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.form-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 14px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #b0bec5;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #00bcd4;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.inline-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.inline-input input {
+  flex: 1;
+}
+
+.form-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.form-checks label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  background-color: #1e1e1e;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+}
+
+.segment-card {
+  background-color: #212121;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.segment-card textarea,
+.segment-card input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.youtube-link-card {
+  background-color: #1d1d1d;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.youtube-link-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #90caf9;
+  margin-bottom: 10px;
+}
+
+.youtube-link-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.youtube-link-row input,
+.youtube-link-row select {
+  flex: 1;
+}
+
+.youtube-thumbnail {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
+
+.submit-btn {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-right: 14px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #00acc1;
+}
+
+.secondary-btn {
+  background-color: #37474f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.secondary-btn:hover {
+  background-color: #455a64;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9e9e9e;
+}
+
+textarea {
+  line-height: 1.5;
+}
+
+.youtube-link-card:hover, .segment-card:hover {
+  border-color: #00bcd4;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+}
+
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .form-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .youtube-link-row,
+  .inline-input {
+    flex-direction: column;
+  }
+
+  .form-checks {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .youtube-thumbnail {
+    max-width: 100%;
+  }
+
+  .submit-btn,
+  .secondary-btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .youtube-link-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-title {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .submit-btn,
+  .secondary-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
